@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <link rel="stylesheet" href="../fonts/iconfont/font_4835798_sav20c8bn48/iconfont.css">
+  <link rel="stylesheet" href="../css/online-doctor-detail.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="header">
+      <div class="wrapper">
+        <!-- logo -->
+        <div class="logo">
+          <img src="/images/navigation/bianzu.png" alt="">
+          <h1>Pet Healthy</h1>
+        </div>
+        <!-- 导航 -->
+        <div class="nav">
+          <ul>
+            <li><a href="">首页</a></li>
+            <li><a href="">百科</a></li>
+            <li><a href="../html/index.html" class="active">健康管理</a></li>
+            <li><a href="../html/pet-adoption.html">爱心收养</a></li>
+          </ul>
+
+        </div>
+      </div>
+
+      <!-- 主体布局：侧边栏 + 右侧内容 -->
+      <div class="row align-items-start"><!-- 关键：让侧边栏和右侧顶部对齐 -->
+        <div class="col-12 col-md-3 offset-md-1">
+          <div class="left-nav">
+            <ul>
+              <li>
+                <a href="../html/index.html">
+                  <span class="iconfont icon-chongwushouye"></span>
+                  主页
+                </a>
+              </li>
+              <li>
+                <a href="../html/healthy.html">
+                  <span class="iconfont icon-chongwudangan"></span>
+                  健康档案
+                </a>
+              </li>
+              <li>
+                <a href="../html/online consultation.html" class="box">
+                  <span class="iconfont icon-chongwuwenzhen"></span>
+                  线上问诊
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 右侧内容区域 -->
+        <div class="col-12 col-md-8 left-shift">
+          <!-- 面包屑 + 按钮 同行显示 -->
+          <nav class="d-flex align-items-center justify-content-between mb-3" style="--bs-breadcrumb-divider: '>';"
+            aria-label="breadcrumb">
+            <!-- 面包屑在左 -->
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="../html/online consultation.html">线上问诊</a></li>
+              <li class="breadcrumb-item active" aria-current="page">宠物医生详情</li>
+            </ol>
+            <!-- 收藏/分享按钮在右 -->
+            <div class="collect-share">
+              <button class="btn btn-outline-collect me-2" type="button">
+                <span class="iconfont icon-guanzhu-zhihui"></span>
+                收藏
+              </button>
+              <button class="btn btn-outline-share" type="button">
+                <span class="iconfont icon-a-fenxiang2"></span>
+                分享
+              </button>
+            </div>
+          </nav>
+
+
+          <div class="file-card">
+            <div class="doctor-pic">
+              <img src="../images/images2/医生1.jpg" alt="">
+            </div>
+
+            <div class="doctor-detail">
+              <ul>
+                <li>医生姓名：笨笨</li>
+                <li>性别：女</li>
+                <li>年龄：27</li>
+                <li>专业：33333</li>
+                <li>联系电话：13058338562</li>
+              </ul>
+              <button class="btn btn-outline-con" type="submit">
+                <span class="iconfont icon-chongwuwenzhen"></span>
+                线上问诊
+              </button>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+
+
+      </div>
+    </div><!-- row -->
+  </div><!-- header -->
+  </div><!-- container-fluid -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="../css/bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

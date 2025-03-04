@@ -1,0 +1,146 @@
+.pet-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.pet-doctor-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pet-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.online-search {
+  gap: 8px;
+
+  height: 40px;
+
+  margin: 0;
+  max-width: 960px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.location h4 {
+  font-size: 20px;
+  font-family: 'Alimama FangYuanTi', sans-serif;
+
+  margin: 0;
+  line-height: 40px;
+}
+
+.dropdown {
+  padding-left: 8px;
+}
+
+.dropdown-toggle {
+  background-color: #dcccbc !important;
+  color: rgb(49, 47, 47) !important;
+  border-radius: 10px;
+
+  border: none;
+  margin-top: 2px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0e2b1;
+}
+
+.doctor-search form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.doctor-search h5 {
+  font-size: 16px;
+  font-family: 'Alimama FangYuanTi', sans-serif;
+}
+
+.doctor-search input {
+  width: 100px;
+}
+
+.btn-outline-success {
+  background-color: #F1C024;
+  border: none;
+  color: rgb(239, 236, 236);
+}
+
+.icon-icon-test:before {
+
+  color: rgb(242, 242, 242) !important;
+  content: "\e63c";
+}
+
+.btn-outline-success:hover {
+  background-color: #ebb400;
+}
+
+.btn-outline-success:active {
+  background-color: #ebb400 !important;
+}
+
+.pet-details-row {
+
+  max-width: 960px;
+
+  margin-top: 70px !important;
+
+}
+
+.doctor-details {
+  margin-left: 35px;
+
+  width: 280px;
+  height: 250px;
+  background-color: rgb(249, 249, 249);
+  border: none;
+
+  border-radius: 30px;
+
+}
+
+.doctor-details a {
+  color: #333;
+  text-decoration: none;
+}
+
+.doctor-details a:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+.doctor-detail-bac img {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+
+}
+
+.doctor-detail-bac {
+  padding-top: 12px;
+  text-align: center;
+}
+
+.name {
+  padding-top: 10px;
+  font-size: 16px;
+  font-family: 'Alimama FangYuanTi', sans-serif;
+  text-align: center;
+  margin-bottom: 2px;
+}

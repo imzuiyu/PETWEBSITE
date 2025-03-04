@@ -1,0 +1,154 @@
+.pet-adoption-title {
+  padding-top: 5px;
+  font-size: 24px;
+  font-family: 'Alimama FangYuanTi', sans-serif;
+
+}
+
+.adoption-section {
+  background-color: #f0e2b1;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin: 15px auto 0;
+  max-width: 960px;
+}
+
+.adoption-section2 {
+  background-color: #a4805d;
+  height: 7px;
+
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.adoption-search {
+  background-color: #a4805d;
+  height: 40px;
+
+  margin: 20px auto 0;
+  max-width: 960px;
+  display: flex;
+}
+
+.adoption-search h4 {
+  font-size: 18px;
+  font-family: 'Alimama FangYuanTi', sans-serif;
+  padding-left: 540px;
+  padding-top: 8px;
+}
+
+.dropdown {
+  padding-left: 8px;
+}
+
+.dropdown-toggle {
+  background-color: #dcccbc !important;
+  color: rgb(49, 47, 47) !important;
+  border-radius: 10px;
+
+  border: none;
+  margin-top: 2px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0e2b1;
+}
+
+.btn-secondary {
+  height: 36px;
+  margin-top: 2px;
+  margin-right: 15px;
+  font-size: 15px;
+  color: rgb(17, 16, 16);
+
+  text-align: center;
+}
+
+.pet-details-row {
+  max-width: 960px;
+  margin: 20px auto 0;
+}
+
+.adoption-details {
+  margin-top: 30px;
+  width: 300px;
+  height: 395px;
+  background-color: rgb(249, 249, 249);
+  border: 30px solid #f0e2b1;
+
+  border-radius: 95px 95px 0 0;
+}
+
+.adoption-detail-bac {
+  border-radius: 80px 80px 0 0;
+}
+
+.adoption-detail-bac img {
+  width: 200px;
+  height: 200px;
+  border-radius: 60px 60px 0 0;
+
+}
+
+.adoption-detail-bac {
+  padding-top: 12px;
+  text-align: center;
+}
+
+.name {
+  padding-top: 5px;
+  font-size: 16px;
+  font-family: 'Alimama FangYuanTi', sans-serif;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.adoption-details {
+  margin-left: 15px;
+}
+
+.detail {
+  display: flex;
+  text-align: center;
+  height: 16px;
+}
+
+.detail p {
+  font-size: 14px;
+  padding-left: 12px;
+}
+
+.condition {
+  color: rgba(70, 182, 10, 1.00);
+}
+
+.introduce p {
+  font-size: 13px;
+  color: rgb(53, 52, 52);
+  margin-bottom: 0;
+
+}
+
+.introduce {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.confirm {
+  display: grid;
+  place-items: center;
+}
+
+.btn-confirm {
+  background-color: #F1C024;
+  color: rgb(251, 251, 251);
+  font-size: 12px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: none;
+  width: 100px;
+  height: 30px;
+
+
+}

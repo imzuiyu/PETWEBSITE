@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id 4835798 */
+  src: url('iconfont.woff2?t=1740286933302') format('woff2'),
+    url('iconfont.woff?t=1740286933302') format('woff'),
+    url('iconfont.ttf?t=1740286933302') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiedaichongwu:before {
+  font-size: 28px;
+  color: #E97B6F;
+  font-weight: 700;
+  content: "\e90d";
+}
+
+.icon-chongwu:before {
+  font-size: 28px;
+  content: "\e612";
+}
+
+.icon-chongwuyiliao:before {
+  font-size: 28px;
+
+  font-weight: 700;
+  content: "\e616";
+}
+
+.icon-icon-test:before {
+  font-size: 18px;
+  color: rgb(78, 74, 74);
+  content: "\e63c";
+}
+
+.icon-chongwushouye:before {
+  margin-right: 6px;
+  font-size: 32px;
+  content: "\e665";
+  padding-right: 3px;
+}
+
+.icon-chongwuwenzhen:before {
+  font-size: 36px;
+  content: "\e613";
+}
+
+.icon-chongwudangan:before {
+  font-size: 36px;
+  content: "\e615";
+
+}
+
+.icon-ashbin:before {
+  content: "\e666";
+}
+
+.icon-arrow-double-left:before {
+  content: "\e667";
+}
+
+.icon-camera:before {
+  content: "\e668";
+}
+
+.icon-notification:before {
+  content: "\e679";
+}
+
+.icon-setting:before {
+  content: "\e67d";
+}
+
+.icon-gengduo:before {
+  content: "\e61e";
+}
+
+.icon-guanzhu-zhihui:before {
+  color: rgb(255, 252, 252);
+  font-size: 18px;
+  content: "\e61f";
+}
+
+.icon-shangchuantupian:before {
+  content: "\e620";
+}
+
+.icon-a-fenxiang2:before {
+  color: rgb(255, 252, 252);
+  font-size: 18px;
+  content: "\e621";
+}
+
+.icon-bianji:before {
+  content: "\e622";
+}

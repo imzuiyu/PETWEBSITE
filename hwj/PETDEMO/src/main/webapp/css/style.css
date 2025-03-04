@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Alimama FangYuanTi';
+    src: url('../fonts/AlimamaFangYuanTiVF/AlimamaFangYuanTiVF/AlimamaFangYuanTiVF-Thin.woff2') format('woff2'),
+        url('../fonts/AlimamaFangYuanTiVF/AlimamaFangYuanTiVF/AlimamaFangYuanTiVF-Thin.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+.header .wrapper {
+
+    padding-left: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    width: 139px;
+
+    font-size: 36px;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.nav {
+    margin-left: 150px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 43px;
+}
+
+.nav li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
+
+}
+
+.nav li .active,
+.nav li a:hover {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffe6e6;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    display: flex;
+    height: 42px;
+    width: 96px;
+    background-color: #FDE9B1;
+
+}
+
+/* 侧边导航栏 */
+.left-nav {
+    margin-top: 48px;
+    margin-left: 20px;
+    width: 198px;
+    /* 侧边栏宽度 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* 按钮样式 */
+.left-nav li {
+    list-style: none;
+    margin-bottom: 10px;
+    /* 按钮之间的间距 */
+    width: 100%;
+    /* 按钮宽度占满父容器 */
+}
+
+
+.left-nav li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+
+    height: 50px;
+
+    padding: 0 20px;
+
+    white-space: nowrap;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.left-nav li a:hover {
+    background-color: #FDE9B1;
+    /* 悬停时的背景色 */
+}
+
+/* 图标样式 */
+.left-nav img {
+    width: 32px;
+    height: 28px;
+    margin-right: 10px;
+    /* 图标与文字的间距 */
+}
+
+.left-shift {
+    margin-left: -80px;
+}
+
+.carousel-container {
+    position: relative;
+    margin: 48px auto 0;
+    width: 100%;
+    max-width: 960px;
+}
+
+/* 轮播图容器 */
+.carousel {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/1;
+
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 轮播图图片容器 */
+.carousel-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+/* 轮播图单张图片 */
+.carousel-img {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* 轮播图控制按钮 */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-left,
+.carousel-right {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 24px;
+    user-select: none;
+}
+
+.carousel-left:hover,
+.carousel-right:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.pet-section {
+    margin: 15px auto 0;
+    max-width: 960px;
+}
+
+.pet-content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.pet-title {
+    font-size: 24px;
+    font-family: 'Alimama FangYuanTi', sans-serif;
+}
+
+.pet-details-row {
+    max-width: 960px;
+    /* 与轮播图同宽 */
+    margin: 0 auto;
+}
+
+.mt-3 {
+    margin-top: 0 !important;
+}
+
+.pet-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* 允许换行 */
+}
+
+@media (max-width: 768px) {
+    .pet-detail {
+        flex-direction: column;
+    }
+}
+
+.details-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pet-details {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.details {
+    width: 635px;
+    height: 371px;
+    border-radius: 30px;
+    background-color: #fbf4e2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.details-left li {
+    padding-left: 68px;
+    padding-top: 30px;
+    list-style: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.details-left ul {
+    z-index: 1;
+}
+
+.details-left li:first-child {
+    padding-top: 32px;
+}
+
+.details-left li:last-child {
+    padding-bottom: 20px;
+}
+
+.check-btn {
+    width: 135px;
+
+    margin-left: 80px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #df9f95;
+    color: #fff;
+    font-size: 16px;
+}
+
+.details-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.details-right img {
+    width: 210px;
+    height: 210px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.details-right p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.details-bac {
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.col-lg-4 {
+    padding: 0 16px !important;
+}
+
+.healthy-reminber {
+    width: 325px;
+    height: 762px;
+    background-color: #FBF4E2;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.healthy-content {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.healthy-details {
+    margin: 21px 15px;
+    background-color: rgba(241, 192, 36, 0.40);
+    border-radius: 25px;
+    width: 295px;
+    height: 220px;
+}
+
+.healthy-details ul {
+    margin-top: 25px;
+    margin-left: 15px;
+    padding-left: 0 !important;
+}
+
+.healthy-details li {
+    padding: 8px;
+    list-style: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+}
+
+.healthy-details li:first-child {
+    padding-top: 15px;
+}
