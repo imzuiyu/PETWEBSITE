@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    margin: auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    padding: 7px 18px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+
+}
+
+.nav-item.active {
+    background-color: #ffe0e0;
+    /* 类似截图中百科按钮的背景色，可根据需要调整 */
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    width: 1080px;
+    margin: 20px auto;
+    /* background-color: #9f6565; */
+    display: flex;
+    /* text-align: center; */
+}
+
+.content {
+    width: 700px;
+    margin: 0 auto;
+    border: 1px solid #cecece;
+    padding: 15px;
+    border-radius: 10px;
+    /* margin-right: 100px; */
+    /* position: relative; */
+}
+
+.content .head {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.title p {
+    /* font-family: 'Comic Sans MS', cursive; */
+    margin: 5px 0;
+}
+
+.content a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.content .head {
+    margin-left: 10px;
+}
+
+.box .title .writor .a2 {
+    display: flex;
+    /* background-color: #ffe0e0; */
+    /* margin-right: 100px; */
+
+}
+
+.box .title h3 {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.box .title .writor {
+    margin-left: 7px;
+    display: flex;
+}
+
+.box .title .writor a p {
+    font-size: 13px;
+    display: block;
+    margin-left: 10px;
+}
+
+.box .title p {
+    font-size: 13px;
+    display: block;
+    margin-left: 10px;
+    color: #ccc;
+}
+
+.box .title .writor img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.word {
+    margin-top: 20px;
+    text-indent: 2em;
+}
+
+.word p {
+    display: block;
+    margin-top: 10px;
+}
+
+.box .click {
+    position: fixed;
+    bottom: 100px;
+    right: 325px;
+}
+
+.box .click ul {
+    /* width: 50px; */
+    /* height: 200px; */
+    /* background-color: #c1ffa4; */
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* 子元素垂直排列 */
+    justify-content: center;
+    /* 子元素在主轴（垂直方向）上居中 */
+    align-items: center;
+}
+
+.box .click ul li {
+    width: 30px;
+    /* height: 30px; */
+    margin-bottom: 10px;
+    /* background-color: #c1ffa4; */
+}
+
+.box .click ul li .iconfont {
+    font-size: 25px;
+}
+
+.box .click ul li p {
+    display: block;
+    color: #ccc;
+    font-size: 15px;
+}
+
+.box .click ul li:nth-last-child(1) {
+    position: relative;
+    top: 50px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #FDE9B1;
+    text-align: center;
+    line-height: 45px;
+}

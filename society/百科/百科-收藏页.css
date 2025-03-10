@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    margin: auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    padding: 7px 18px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+
+}
+
+.nav-item.active {
+    background-color: #ffe0e0;
+    /* 类似截图中百科按钮的背景色，可根据需要调整 */
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    width: 1080px;
+    margin: 20px auto;
+    /* background-color: #9f6565; */
+
+    /* text-align: center; */
+}
+
+.sub {
+    width: 650px;
+    margin: 30px auto;
+    margin-top: 35px;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sub .input {
+    /* display: block;
+    float: right; */
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 120px;
+    height: 25px;
+    border-radius: 8px;
+    border-color: #c7c7c7;
+}
+
+.box .write ul {
+    list-style: none;
+    height: 200px;
+    width: 670px;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.box .write ul li {
+    width: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+ul li:nth-child(3)~li {
+    margin-top: 25px;
+}
+
+.box .write ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+
+}
+
+.write ul li .a1 img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* .write ul li .a1 h4 {
+    display: block;
+    margin-left: 5px;
+} */
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.day {
+    color: gray;
+    font-size: 12px;
+    /* margin-left: 5px; */
+}
+
+.text-container p {
+    font-size: 13px;
+    color: #8b8b8b;
+}
+
+.write ul li .writor {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    /* background-color: antiquewhite; */
+}
+
+/* .write ul li .a2 {
+    display: flex;
+    background-color: #ffe0e0;
+
+} */
+
+.write ul li .a2 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+}

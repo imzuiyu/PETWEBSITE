@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宠物社区 - 个人中心</title>
+    <!-- Font Awesome图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #ff914d;
+            --secondary-color: #8ac4ff;
+            --background: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--background);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 导航栏 */
+        .nav-bar {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        /* 个人资料区 */
+        .profile-section {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+        }
+
+        .profile-info {
+            flex: 1;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .edit-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+        }
+
+        /* 内容标签页 */
+        .content-tabs {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab-nav {
+            display: flex;
+            border-bottom: 2px solid #eee;
+        }
+
+        .tab-link {
+            padding: 1rem 2rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .tab-link.active {
+            border-bottom: 3px solid var(--secondary-color);
+            color: var(--secondary-color);
+        }
+
+        .tab-content {
+            padding: 2rem;
+            min-height: 400px;
+        }
+
+        /* 内容卡片 */
+        .content-card {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 1rem;
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+            }
+
+            .avatar {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <h1>🐾 宠物社区</h1>
+    </nav>
+
+    <div class="container">
+        <!-- 个人资料区 -->
+        <section class="profile-section">
+            <img src="avatar.jpg" alt="用户头像" class="avatar">
+            <div class="profile-info">
+                <button class="edit-btn" onclick="openEditModal()"><i class="fas fa-edit"></i> 编辑资料</button>
+                <h2>毛小咪的主人</h2>
+                <p>🐱 宠物名字：毛小咪</p>
+                <p>📍 城市：上海</p>
+                <p>📝 简介：资深猫奴，分享养猫日常和经验交流～</p>
+            </div>
+        </section>
+
+        <!-- 内容区 -->
+        <section class="content-tabs">
+            <div class="tab-nav">
+                <div class="tab-link active" onclick="switchTab('posts')">我的文章</div>
+                <div class="tab-link" onclick="switchTab('media')">我的图文</div>
+            </div>
+
+            <div class="tab-content">
+                <!-- 文章列表 -->
+                <div id="posts-tab" class="tab-pane active">
+                    <div class="content-card">
+                        <img src="post1.jpg" alt="文章配图" class="card-image">
+                        <div>
+                            <h3>新手养猫指南</h3>
+                            <p>从驱虫到疫苗，新手需要知道的那些事...</p>
+                            <div class="meta">
+                                <span>2023-08-15</span>
+                                <i class="fas fa-comments"></i> 42
+                                <i class="fas fa-heart"></i> 128
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 更多文章 -->
+                </div>
+
+                <!-- 图文内容 -->
+                <div id="media-tab" class="tab-pane">
+                    <div class="image-grid">
+                        <div class="grid-item">
+                            <img src="cat1.jpg" alt="猫咪图片">
+                            <p>今天的小可爱营业啦～</p>
+                        </div>
+                        <!-- 更多图片 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // 切换标签页
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-link').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+
+            event.currentTarget.classList.add('active');
+            document.getElementById(`${tabName}-tab`).classList.add('active');
+        }
+
+        // 编辑资料弹窗
+        function openEditModal() {
+            // 这里可以添加模态框实现
+            alert('此处打开资料编辑弹窗');
+        }
+    </script>
+</body>
+
+</html>

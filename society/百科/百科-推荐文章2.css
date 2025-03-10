@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    margin: auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    padding: 7px 18px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+
+}
+
+.nav-item.active {
+    background-color: #ffe0e0;
+    /* 类似截图中百科按钮的背景色，可根据需要调整 */
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    width: 1080px;
+    margin: 30px auto;
+    /* background-color: #9f6565; */
+    /* text-align: center; */
+}
+
+.head {
+    width: 650px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+.head a {
+    text-decoration: none;
+    color: #7f7f7f;
+    font-size: 13px;
+}
+
+.head span {
+    color: #7f7f7f;
+}
+
+.sub {
+    width: 650px;
+    margin: 20px auto;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sub .input {
+    /* display: block;
+    float: right; */
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 120px;
+    height: 25px;
+    border-radius: 8px;
+    border-color: #c7c7c7;
+}
+
+.box ul {
+    width: 600px;
+    margin: 0 auto;
+    list-style: none;
+    background-color: #bcffb7;
+}
+
+.box ul li {
+    width: 600px;
+    display: flex;
+}
+
+.box ul li a {
+    text-decoration: none;
+}
+
+.box ul li .a1 h4 {
+    color: #333;
+}
+
+.box ul li .a1 p {
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    color: #ccc;
+    font-size: 13px;
+    text-indent: 7px;
+}
+
+.box ul li .a2 {
+    display: flex;
+    background-color: #ffe0e0;
+    /* margin-right: 100px; */
+
+}
+
+.box .title {
+    width: 510px;
+    margin-right: 10px;
+}
+
+.box .title .writor {
+    margin-left: 7px;
+    display: flex;
+}
+
+.box .title .writor img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.box ul li .image {
+    /* margin-right: 10px; */
+    margin-bottom: 10px;
+}
+
+.box ul li .image img {
+    width: 125px;
+    border-radius: 10px;
+}
+
+.limited-text {
+    white-space: nowrap;
+    /* 防止文本换行 */
+    overflow: hidden;
+    /* 隐藏超出部分 */
+    text-overflow: ellipsis;
+    /* 超出部分用省略号表示 */
+    max-width: 460px;
+    /* 根据实际情况调整最大宽度 */
+    /* background-color: #fff; */
+}
+
+.box ul li .a2 p {
+    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #8b8b8b;
+    font-size: 13px;
+}
+
+.title .click {
+    background-color: aliceblue;
+    margin-top: 7px;
+    position: fixed;
+    left: 750px;
+    float: left;
+}
+
+/*fixed了滚动怎么办？？*/
+
+.title .click .num {
+    font-size: 13px;
+    color: #ccc;
+}
+
+.title .click .num {
+    margin-right: 10px;
+}
+
+.title .click .iconfont {
+    margin-right: 3px;
+}

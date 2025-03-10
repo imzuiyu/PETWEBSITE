@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社区-发布</title>
+    <link rel="stylesheet" href="./社区-发布图文.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="#" class="nav-item">首页</a>
+            <a href="#" class="nav-item">百科</a>
+            <a href="#" class="nav-item active">社区</a>
+            <a href="#" class="nav-item">健康管理</a>
+            <a href="#" class="nav-item">爱心收养</a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="left-box" id="leftbox">
+            <ul>
+                <li class="navleft-active"><a href="#"><span class="iconfont icon-shouye6"></span><span>主页</span></a>
+                </li>
+                <li><a href="#"><span class="iconfont icon-shoucang"></span><span>关注</span></a></li>
+            </ul>
+            <!-- 新增按钮组 -->
+            <div class="button-group">
+                <a href="#" class="nav-btn">
+                    <span class="iconfont icon-pinglun"></span>
+
+                </a>
+                <a href="#" class="nav-btn" id="mycenter">
+                    <img src="../照片/横图3.jpg" id="hoverImg">
+                </a>
+                <ul id="mycenter-dropdown" class="dropdown" style="display: none;">
+                    <li><a href="#">发布</a></li>
+                    <li><a href="#">设置</a></li>
+                    <li><a href="#">反馈</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="center">
+            <div class="banner">
+                <ul>
+                    <li class="active2"><a href="#">发布图片/视频</a>
+                        <hr>
+                    </li>
+                    <li><a href="#">发布文章</a>
+                        <hr style="display: none;">
+                    </li>
+                    <li><a href="#">草稿箱</a>
+                        <hr style="display: none;">
+                    </li>
+                </ul>
+                <div class="change1">
+                    <div class="write">
+                        <textarea placeholder="分享你的趣事和感受吧!" id="imginputTextarea"></textarea>
+                        <div class="foot">
+                            <div class="btn-group">
+                                <button class="tag-btn"> # 话题</button>
+                                <button class="tag-btn"> @ 用户</button>
+                                <button class="tag-btn">😊表情</button>
+                            </div>
+                            <div class="count-text" id="countText">0/1000字</div>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <input type="file" accept="image/*, video/*" multiple id="fileInput">
+                        <span class="iconfont icon-tupian"></span>
+                        <p>拖动到此处上传或点击上传</p>
+                        <p>（最多支持上传 9 张）</p>
+                        <div class="thumbnail-inner"></div>
+                    </div>
+                </div>
+                <div class="change2" style="display: none;">
+                    <div class="main">
+                        <div class="photo-total">
+                            <h3 class="title">封面</h3>
+                            <div class="photo">
+                                <input type="file" accept="image/*, video/*" multiple id="fileInput">
+                                <span class="iconfont icon-tupian"></span>
+                                <p>拖动到此处上传或点击上传</p>
+                                <div class="thumbnail-inner"></div>
+                            </div>
+                        </div>
+                        <div class="write-total">
+                            <h3 class="title">正文内容</h3>
+                            <div class="write-title">
+                                <textarea placeholder="在这里填写你的标题" id="inputTextarea"></textarea>
+                                <span class="count-text" id="countText2">0/20字</span>
+                            </div>
+                            <div class="write-content">
+                                <textarea placeholder="在这里写正文" id="contentTextarea"></textarea>
+                                <span class="word-count" id="wordCount">正文字数 0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="change3" style="display: none;">新建草稿箱部分</div>
+                <div class="end">
+                    <button id="confirmBtn">确定</button>
+                    <button>暂存草稿箱</button>
+                </div>
+            </div>
+            <!-- 自定义弹窗 -->
+            <div class="custom-popup">
+                <div class="popup-content">
+                    <label for="visibility">可见范围</label>
+                    <select class="visibility-select" id="visibility">
+                        <option value="public">公开可见</option>
+                        <option value="private">仅自己可见</option>
+                        <option value="friends">好友可见</option>
+                    </select>
+                    <div class="place">
+                        <label for="place">添加地点</label>
+                        <select class="place-select" id="place">
+                        </select>
+                    </div>
+                    <div class="publish-time">
+                        <span>发布时间</span>
+                        <input type="radio" id="instant" name="publishTime" checked>
+                        <label for="instant">立即发布</label>
+                        <input type="radio" id="schedule" name="publishTime">
+                        <label for="schedule">定时发布</label>
+                    </div>
+
+                    <div class="button">
+                        <button class="confirm-btn">确认发布</button>
+                        <button class="cancel-btn">取消</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./社区-发布图文.js"></script>
+</body>
+
+</html>

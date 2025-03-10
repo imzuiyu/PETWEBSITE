@@ -1,0 +1,478 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    margin: auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    padding: 7px 18px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+
+}
+
+.nav-item.active {
+    background-color: #ffe0e0;
+    /* 类似截图中百科按钮的背景色，可根据需要调整 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+.box {
+    display: flex;
+    margin-top: 30px;
+}
+
+.left-box {
+    margin-left: 150px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    /* 明确设置 left-box 的宽度 */
+}
+
+.left-box .button-group ul {
+    /* width: 120px; */
+    position: relative;
+    left: 50px;
+    top: -50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-box .button-group ul li {
+    height: 20px;
+    padding: 10px;
+
+}
+
+.left-box .button-group ul li:hover {
+    background-color: #FFDED6;
+}
+
+.right-box {
+    margin-left: 200px;
+    /* 这里设置的值要根据 left-box 的实际宽度调整，包括其 margin 等 */
+}
+
+.left-box ul li a {
+    display: block;
+    width: 100px;
+    font-size: 16px;
+}
+
+.left-box .iconfont {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.left-box ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+
+}
+
+.left-box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.button-group {
+    margin-top: 350px;
+    /* 关键属性：将按钮推到容器底部 */
+    padding-left: 20px;
+    /* 新增保持间距 */
+
+}
+
+.button-group a {
+    width: 40px;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+
+.nav-btn .iconfont {
+    font-size: 40px;
+}
+
+.navleft-active {
+    background-color: #FDE9B1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-box ul li:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+    width: 950px;
+    height: 600px;
+    border-radius: 15px;
+    background-color: #fff1cc;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 890px;
+    height: 540px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.banner ul .active2 a {
+    color: #FF957F;
+}
+
+.banner ul .active2 hr {
+    border: none;
+    border-top: 1px solid #FF957F;
+}
+
+.banner ul {
+    display: flex;
+}
+
+.banner ul li {
+    margin-right: 30px;
+}
+
+.banner ul li hr {
+    margin-top: 10px;
+}
+
+.banner ul li a:hover {
+    color: #FF957F;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.write {
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.write textarea {
+    width: 100%;
+    height: 70px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    resize: none;
+    line-height: 1.5;
+    color: #333;
+}
+
+.write textarea::placeholder {
+    color: #999;
+}
+
+
+.tag-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ddd;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+}
+
+.count-text {
+    font-size: 13px;
+    color: #999;
+    margin-right: 50px;
+}
+
+.count-text.exceed {
+    color: #FF957F;
+}
+
+.photo {
+    position: relative;
+    height: 270px;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.photo input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.photo .iconfont {
+    font-size: 40px;
+    color: #999;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.photo p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.main {
+    display: flex;
+    margin-top: 15px;
+}
+
+.write-total {
+    width: 60%;
+}
+
+.write-total .title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.write-title {
+    width: 65%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    /* margin-top: 20px; */
+}
+
+.write-title textarea {
+    width: 100%;
+    height: 25px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    resize: none;
+    line-height: 1.5;
+    color: #333;
+}
+
+.write-title textarea::placeholder {
+    color: #999;
+}
+
+
+.tag-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ddd;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+}
+
+.write-title .count-text {
+    font-size: 13px;
+    color: #999;
+    margin-left: 230px;
+}
+
+.write-content {
+    position: relative;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.write-content textarea {
+    width: 100%;
+    height: 270px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    resize: none;
+    line-height: 1.5;
+    color: #333;
+}
+
+.write-content textarea::placeholder {
+    color: #999;
+}
+
+.word-count {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #999;
+    font-size: 12px;
+}
+
+.count-text.exceed {
+    color: #FF957F;
+}
+
+.photo-total {
+    width: 30%;
+    margin-right: 70px;
+}
+
+.photo-total .title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.thumbnail-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnail {
+
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    cursor: move;
+}
+
+.thumbnail img,
+.thumbnail video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: gray;
+    color: white;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+
+.banner .end {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.banner .end button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.banner .end button:nth-child(1) {
+    width: 60px;
+    background-color: #ffc8bd;
+}
+
+.custom-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* .popup-content {
+    text-align: center;
+} */
+
+.popup-content select {
+    border-radius: 10px;
+    border: 2px #ddd solid;
+    width: 150px;
+    height: 35px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.publish-time {
+    margin-bottom: 15px;
+}
+
+.publish-time input {
+    margin-left: 10px;
+}
+
+.popup-content .button {
+    width: 170px;
+    margin: 0 auto;
+}
+
+.popup-content button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirm-btn {
+    background: #ffc8bd;
+    color: white;
+}
+
+.cancel-btn {
+    background: #ddd;
+}

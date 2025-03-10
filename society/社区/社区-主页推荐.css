@@ -1,0 +1,536 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    margin: auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    padding: 7px 18px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+
+}
+
+.nav-item.active {
+    background-color: #ffe0e0;
+    /* 类似截图中百科按钮的背景色，可根据需要调整 */
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.largest-box {
+    width: 1200px;
+    display: flex;
+    margin: 10px auto;
+}
+
+.left-box {
+    /* margin-right: 80px; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 200px;
+    /* 明确设置 left-box 的宽度 */
+}
+
+.left-box .button-group ul {
+    width: 120px;
+    position: relative;
+    left: 50px;
+    top: -50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-box .button-group ul li {
+    height: 20px;
+    padding: 10px;
+
+}
+
+.left-box .button-group ul li:hover {
+    background-color: #FFDED6;
+}
+
+.right-box {
+    margin-left: 200px;
+    /* 这里设置的值要根据 left-box 的实际宽度调整，包括其 margin 等 */
+}
+
+.left-box ul li a {
+    display: block;
+    width: 100px;
+    font-size: 16px;
+}
+
+.left-box .iconfont {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.left-box ul li {
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+
+}
+
+.left-box img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.button-group {
+    margin-top: 350px;
+    /* 关键属性：将按钮推到容器底部 */
+    padding-left: 20px;
+    /* 新增保持间距 */
+
+}
+
+.button-group a {
+    width: 40px;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+
+.nav-btn .iconfont {
+    font-size: 40px;
+}
+
+.navleft-active {
+    background-color: #FDE9B1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-box ul li:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* .right-box {
+    margin-left: 200px;
+} */
+
+.box {
+    width: 850px;
+    /* height: 100px; */
+    margin: 0 auto;
+    /* background-color: #ffa8a8; */
+}
+
+.nav2 {
+    /* margin: auto; */
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.nav2-item {
+    text-decoration: none;
+    color: #333;
+    padding: 7px 18px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+
+}
+
+.nav2-item.active {
+    background-color: #ffe0e0;
+    /* 类似截图中百科按钮的背景色，可根据需要调整 */
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav2-item:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.content-container {
+    margin-top: 10px;
+    display: flex;
+    width: 850px;
+    align-items: center;
+}
+
+.main-card {
+    width: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main-card img {
+    width: 350px;
+    /* height: auto; */
+    border-radius: 10px;
+}
+
+.side-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side-card {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.side-card img {
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    /* height: auto; */
+}
+
+.content-container button {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.box1 {
+    display: flex;
+    width: 850px;
+    /* height: 100px; */
+    margin: 50px auto;
+    /* background-color: #ffa8a8; */
+}
+
+.post-section {
+    margin-right: 7px;
+    display: flex;
+    margin-left: 15px;
+    /* background-color: aquamarine; */
+    width: 470px;
+    border: 1px solid transparent;
+    /* 初始时设置为透明边框 */
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.post-section.show-border {
+    border-color: #ccc;
+    /* 点击评论后显示的边框颜色 */
+}
+
+.post-section hr {
+    width: 430px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.time {
+    margin-left: 10px;
+    margin-top: 5px;
+    color: gray;
+    font-size: 13px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container p {
+    font-size: 15px;
+}
+
+.recommend-section .text-container span {
+    white-space: nowrap;
+    /* 防止文本换行 */
+    overflow: hidden;
+    /* 隐藏超出部分 */
+    text-overflow: ellipsis;
+    /* 超出部分用省略号表示 */
+    max-width: 180px;
+    /* 根据实际情况调整最大宽度 */
+    /* background-color: #fff; */
+}
+
+.level {
+    color: gray;
+    font-size: 12px;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+.post-content p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.post-images img {
+    width: 130px;
+    height: 100px;
+    margin-right: 1px;
+    border-radius: 10px;
+}
+
+.post-interaction {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.post-interaction span {
+    font-size: 14px;
+    color: gray;
+}
+
+.post-interaction .iconfont {
+    font-size: 16px;
+    color: #333;
+    margin-right: 3px;
+}
+
+.post-interaction .click {
+    margin-right: 5px;
+}
+
+.post-interaction button {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.clicks {
+    margin-right: 7px;
+}
+
+.clicks:nth-child(3) {
+    margin-left: 170px;
+}
+
+.post-interaction #liked {
+    animation: likeAnimation 0.3s ease;
+}
+
+@keyframes likeAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.post-section hr {
+    margin-bottom: 20px;
+}
+
+.comment {
+    padding-left: 5px;
+}
+
+/* 评论输入区域 */
+.comment-input {
+    display: flex;
+    align-items: center;
+    /* background-color: #e0f2f1; */
+    padding: 10px;
+    border-radius: 5px;
+    /* margin-bottom: 15px; */
+}
+
+.comment-input img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-input input {
+    /* flex: 1; */
+    width: 250px;
+    padding: 10px;
+    border: 2px #d8d8d8 solid;
+    border-radius: 15px;
+    outline: none;
+    /* background: transparent; */
+}
+
+.comment-input a {
+    display: block;
+    padding: 7px;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #d9ebff;
+    margin-left: 10px;
+}
+
+.comment-input a:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-input input.highlight {
+    border-color: #d9ebff;
+    /* 高亮时的边框颜色 */
+    box-shadow: 0 0 5px #cde4ff(231, 243, 255, 0.5);
+    /* 添加阴影效果，增强高亮感 */
+}
+
+/* 单个评论 */
+.comment-item {
+    display: flex;
+    align-items: flex-start;
+    /* background-color: #e0f2f1; */
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.comment-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-item .text-container {
+    background-color: #e0f2f1;
+    border-radius: 10px;
+    width: 300px;
+    /*为什么增加不了 */
+    padding: 10px;
+}
+
+.comment-content {
+    /* flex: 1; */
+    width: 300px;
+}
+
+.comment-content .level {
+    margin-top: 5px;
+    font-size: 14px;
+
+}
+
+.comment .post-interaction {
+    margin-left: 50px;
+}
+
+.comment .comment-content input {
+    /* flex: 1; */
+    width: 230px;
+    padding: 10px;
+    border: 2px #d8d8d8 solid;
+    border-radius: 15px;
+    outline: none;
+    margin-left: 45px;
+    margin-bottom: 10px;
+    /* background: transparent; */
+}
+
+.comment .comment-content input.highlight {
+    border-color: #d9ebff;
+    /* 高亮时的边框颜色 */
+    box-shadow: 0 0 5px #cde4ff(231, 243, 255, 0.5);
+    /* 添加阴影效果，增强高亮感 */
+}
+
+.count {
+    margin-right: 10px;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.recommend-section {
+    width: 300px;
+    height: 330px;
+    background-color: #FBF4E2;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.recommend-section h3 {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.recommend-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.follow-btn {
+    background-color: #FFDED6;
+    color: #333;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 7px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.follow-btn:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
